@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stackly Real Estate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+    <img src="orglogo.webp" alt="Stackly" class="navbar-logo">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+
+  <ul class="navbar-nav mx-auto">
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+    <li><a class="dropdown-item" href="home2.html">Home 02</a></li>
+ </ul>
+  </li>
+
+<li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="properties.html">Property</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="dashboard.html">Dashboard</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="news.html">News</a>
+</li>
+
+<li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<div class="dropdown profile-dropdown">
+  <div class="user-circle dropdown-toggle" data-bs-toggle="dropdown">
+    <i class="bi bi-person"></i>
+</div>
+    <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="login.html">Login</a></li>
+    <li><a class="dropdown-item" href="register.html">Register</a></li>
+</ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- <section class="hero-section">
+<div class="container">
+<h1>Search and Find <span>Luxury</span> House</h1>
+<p>Discover handpicked luxury homes designed for comfort and elegance.</p>
+<a href="#" class="btn btn-theme">Make An Enquiry</a>
+</div>
+</section> -->
+<section class="hero-section">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 hero-left">
+                <span class="agency-label">
+                    <i class="bi bi-house-fill"></i> Real Estate Agency
+                </span>
+
+                <h1 class="hero-title">
+                    Search and Find <br>
+                    <span>Luxury</span> House
+                </h1>
+
+                <p class="hero-text">
+                    Discover handpicked luxury homes designed for comfort,
+                    elegance, and modern living.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="error.html" class="btn-enquiry">
+                        Make An Enquiry
+                    </a>
+
+                    <a href="error.html" class="icon-box">
+                        <i class="bi bi-play-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 hero-right">
+                <img src="realestateslider1.jpg"
+                     class="main-hero-img"
+                     id="mainImage">
+
+                <div class="thumbnail-images">
+                    <img src="realestateslider1.jpg" class="thumb active">
+                    <img src="realestateslider2.jpg" class="thumb">
+                    <img src="realestateslider3.jpg" class="thumb">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="about-section">
+  <div class="container">
+    <div class="about-wrapper">
+      <div class="about-images">
+        <img src="aboutimgestate.jpeg"  alt="">
+      </div>
+      <div class="about-content">
+        <span class="sub-title">About Us</span>
+        <h2>Dream Living Spaces <br> Setting New Build</h2>
+        <p class="about-text">
+          Over 39,000 people work for us in more than 70 countries all over
+          the world. This breadth of global coverage, combined with specialist services.
+        </p>
+    <div class="about-card">
+    <div class="icon">
+        <i class="bi bi-house-door"></i>
+    </div>
+    <div>
+        <h5>The Perfect Residency</h5>
+        <p>Experience refined living spaces crafted for comfort, elegance, and modern lifestyles.</p>
+    </div>
+</div>
+
+<div class="about-card">
+    <div class="icon">
+        <i class="bi bi-person-workspace"></i>
+    </div>
+    <div>
+        <h5>Global Architect Experts</h5>
+        <p>Our experienced architects deliver innovative designs with precision and excellence.</p>
+    </div>
+</div>
+
+<div class="about-card">
+    <div class="icon">
+        <i class="bi bi-geo-alt"></i>
+    </div>
+    <div>
+        <h5>Built-in Storage Cupboards</h5>
+        <p>Smartly designed storage solutions that maximize space and enhance functionality.</p>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="facility-section py-5 fade-up">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+
+        <span class="sub-title">Building Facilities</span>
+        <h2 class="main-title">
+          Making living spaces <br> More Beautiful
+        </h2>
+
+        <p class="desc">
+          Over 39,000 people work for us in more than 70 countries all over
+          the world. This breadth of global coverage, combined with specialist services.
+        </p>
+       
+      </div>
+
+      <div class="col-lg-6">
+        <div class="image-box fade-up">
+          <img src="livingroomestate.jpg" alt="Living Room">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="services-section py-5">
+  <div class="container text-center">
+
+    <span class="sub-title">Our Services</span>
+    <h2 class="section-title mb-5">Our Main Focus</h2>
+
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="service-card" onclick="activateCard(this)">
+          <div class="icon-box1">
+            <i class="bi bi-house-door"></i>
+          </div>
+          <h4>Buy a home</h4>
+          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+          <a href="error.html">Find A Home  &rarr;</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="service-card" onclick="activateCard(this)">
+          <div class="icon-box1">
+            <i class="bi bi-cash-stack"></i>
+          </div>
+          <h4>Rent a home</h4>
+          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+          <a href="error.html">Find A Home  &rarr;</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="service-card" >
+          <div class="icon-box1">
+           <i class="bi bi-building"></i>
+          </div>
+          <h4>Sell a home</h4>
+          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+          <a href="error.html">Find A Home  &rarr;</a>
+        </div>
+      </div>
+       </div>
+  </div>
+</section>
+<section class="apartment-section">
+  <div class="container">
+
+    <span class="sub-title">Apartment Sketch</span>
+    <h2 class="section-title">Apartments Plan</h2>
+    <div class="apartment-tabs">
+      <button class="tab-btn active" onclick="showPlan('studio', this)">The Studio</button>
+      <button class="tab-btn" onclick="showPlan('deluxe', this)">Deluxe Portion</button>
+      <button class="tab-btn" onclick="showPlan('penthouse', this)">Penthouse</button>
+      <button class="tab-btn" onclick="showPlan('topgarden', this)">Top Garden</button>
+      <button class="tab-btn" onclick="showPlan('double', this)">Double Height</button>
+    </div>
+     <div class="plan-content  active" id="studio">
+      <div class="plan-wrapper">
+        <div class="plan-details">
+          <h3>The Studio</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
+          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
+          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
+        </div>
+
+        <div class="plan-image">
+          <img src="apatmentsketch.png" alt="">
+        </div>
+      </div>
+    </div>
+     <div class="plan-content" id="deluxe">
+      <div class="plan-wrapper">
+        <div class="plan-details">
+          <h3>Deluxe Portion</h3>
+          <p>Deluxe apartment description here.</p>
+          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
+          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
+          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
+        </div>
+        <div class="plan-image">
+          <img src="apatmentsketch.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="plan-content" id="penthouse">
+      <div class="plan-wrapper">
+        <div class="plan-details">
+          <h3>Penthouse</h3>
+          <p>Penthouse description here.</p>
+          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
+          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
+          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
+        </div>
+        <div class="plan-image">
+          <img src="apatmentsketch.png" alt="">
+        </div>
+      </div>
+    </div>
+     <div class="plan-content" id="topgarden">
+      <div class="plan-wrapper">
+        <div class="plan-details">
+          <h3>Top Garden</h3>
+          <p>Top Garden description here.</p>
+          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
+          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
+          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
+        </div>
+        <div class="plan-image">
+          <img src="apatmentsketch.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="plan-content" id="double">
+      <div class="plan-wrapper">
+        <div class="plan-details">
+          <h3>Double Height</h3>
+          <p>Double Height description here.</p>
+          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
+          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
+          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
+          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
+        </div>
+        <div class="plan-image">
+          <img src="apatmentsketch.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="area-section">
+
+  <div class="container">
+    <p class="sub-title">Area Properties</p>
+    <h2 class="section-title">Find Your Dream House <br> Search By Area</h2>
+  </div>
+
+  <div class="area-wrapper">
+
+    <button class="slider-btn left-btn" id="prevBtn">
+      <i class="bi bi-arrow-left"></i>
+    </button>
+
+    <div class="slider-container1">
+      <div class="area-slider" id="areaSlider">
+        <div class="area-card">
+          <div class="area-image">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+            <span class="property-count">2 PROPERTIES</span>
+          </div>
+          <div class="area-content">
+            <p>San Francisco</p>
+            <h4>Mission District Area</h4>
+            <a href="#">View Property  &rarr;</a>
+          </div>
+        </div>
+        <div class="area-card">
+          <div class="area-image">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+            <span class="property-count">5 PROPERTIES</span>
+          </div>
+          <div class="area-content">
+            <p>New York</p>
+            <h4>Pacific Heights Area</h4>
+            <a href="error.html">View Property  &rarr;</a>
+          </div>
+        </div>
+        <div class="area-card">
+          <div class="area-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+            <span class="property-count">9 PROPERTIES</span>
+          </div>
+          <div class="area-content">
+            <p>Sedona, Arizona</p>
+            <h4>Noe Valley Zones</h4>
+            <a href="#">View Property  &rarr;</a>
+          </div>
+        </div>
+         <div class="area-card">
+          <div class="area-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+            <span class="property-count">6 PROPERTIES</span>
+          </div>
+          <div class="area-content">
+            <p>Los Angeles</p>
+            <h4>Beverly Hills Area</h4>
+            <a href="error.html">View Property  &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="slider-btn right-btn" id="nextBtn">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+
+  </div>
+
+</section>
+<br>
+<br>
+
+<section class="amenities-section">
+
+  <div class="container">
+    <p class="sub-title">Our Amenities</p>
+    <h2 class="section-title">Building Amenities</h2>
+
+    <div class="amenities-grid">
+
+      <div class="amenity-card">
+        <div class="amenity-icon">
+          <i class="bi bi-car-front"></i>
+        </div>
+        <span class="amenity-number">01</span>
+        <h4>Parking Space</h4>
+        <p>Here is The Good and Safe Parking Areas</p>
+      </div>
+
+      <div class="amenity-card">
+        <div class="amenity-icon">
+          <i class="bi bi-water"></i>
+        </div>
+        <span class="amenity-number">02</span>
+        <h4>Swimming Pool</h4>
+        <p> The Swimming Pool is safe for kids And give more Privacy</p>
+      </div>
+
+      <div class="amenity-card">
+        <div class="amenity-icon">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <span class="amenity-number">03</span>
+        <h4>Private Security</h4>
+        <p>The Stackly gave 24/7 Safety for All people</p>
+      </div>
+
+      <div class="amenity-card">
+        <div class="amenity-icon">
+          <i class="bi bi-hospital"></i>
+        </div>
+        <span class="amenity-number">04</span>
+        <h4>Medical Center</h4>
+        <p>We provide 24/7 Medical Center </p>
+      </div>
+      <div class="amenity-card">
+  <div class="amenity-icon">
+    <i class="bi bi-book"></i>
+  </div>
+  <span class="amenity-number">05</span>
+  <h4>Library Area</h4>
+  <p>We Provide Library Areas for Every One and  You can make Peace</p>
+</div>
+
+<div class="amenity-card">
+  <div class="amenity-icon">
+  <i class="bi bi-moon-stars"></i>
+</div>
+  <span class="amenity-number">06</span>
+  <h4>King Size Beds</h4>
+  <p>We provide Kings sizes beds are more comfortable</p>
+</div><div class="amenity-card">
+  <div class="amenity-icon">
+    <i class="bi bi-house-heart"></i>
+  </div>
+  <span class="amenity-number">07</span>
+  <h4>Smart Homes</h4>
+  <p> very Important we have Smart technology homes</p>
+</div>
+<div class="amenity-card">
+  <div class="amenity-icon">
+    <i class="bi bi-balloon"></i>
+  </div>
+  <span class="amenity-number">08</span>
+  <h4>Kid's Playland</h4>
+  <p>We provide Kids Play ground</p>
+</div>
+ </div>
+  </div>
+</section>
+<br>
+<br>
+
+<section class="testimonial-section">
+
+  <div class="overlay"></div>
+
+  <div class="container testimonial-container">
+
+    <div class="testimonial-header">
+      <div>
+        <p class="sub-title">Client's Testimonial</p>
+        <h2>See What's Our Client<br>Says About Us</h2>
+      </div>
+
+      <!-- <div class="testimonial-arrows">
+        <button class="testi-btn prevBtn">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="testi-btn nextBtn">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div> -->
+    </div>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-slider">
+        <div class="testimonial-card active">
+          <div class="client-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <div>
+              <h4>Jacob William</h4>
+              <span>SELLING AGENTS</span>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg">
+            <div>
+              <h4>Michael John</h4>
+              <span>PROPERTY DEALER</span>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+          </div>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+            <div>
+              <h4>Sarah Lee</h4>
+              <span>INVESTOR</span>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+          </div>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="https://randomuser.me/api/portraits/men/60.jpg">
+            <div>
+              <h4>Daniel Smith</h4>
+              <span>HOME BUYER</span>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p>Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<br>
+<br>
+
+<footer class="footer">
+     <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo mb-4">
+                    <img src="orglogo.webp" alt="Stackly Logo" class="footer-logo-img">
+                </div>
+
+                <p class="footer-text">
+                    Stackly Real Estate helps you find your dream home with
+                    trusted service and modern property solutions.
+                </p>
+
+                <ul class="footer-contact list-unstyled">
+                    <li><i class="bi bi-geo-alt"></i> Salem,TamilNadu,India</li>
+                    <li><i class="bi bi-telephone"></i> +0123-456789</li>
+                    <li><i class="bi bi-envelope"></i> example@stackly.com</li>
+                </ul>
+
+                <div class="footer-social mt-3">
+                    <a href="error.html"><i class="bi bi-facebook"></i></a>
+                    <a href="error.html"><i class="bi bi-twitter"></i></a>
+                    <a href="error.html"><i class="bi bi-linkedin"></i></a>
+                    <a href="error.html"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Company</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="error.html">Blog</a></li>
+                    <li><a href="properties.html">All Properties</a></li>
+                    <li><a href="error.html">Locations Map</a></li>
+                    <li><a href="error.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Services</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="error.html">Order Tracking</a></li>
+                    <li><a href="error.html">Wish List</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="error.html">Terms & Conditions</a></li>
+                    <li><a href="error.html">Promotional Offers</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Newsletter</h5>
+
+                <p class="footer-text">
+                    Subscribe to our weekly newsletter and receive updates via email.
+                </p>
+
+                <div class="newsletter-box">
+            <input type="email" placeholder="Email*" class="newsletter-input">
+            <a href="error.html" class="newsletter-btn">
+            <i class="bi bi-send"></i>
+       </a>
+   </div>
+
+                <h6 class="footer-title mt-4">We Accept</h6>
+                <div class="payment-icons">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+        &copy; 2026 Stackly Real Estate. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  
+document.addEventListener("DOMContentLoaded", function () {
+
+    const mainImage = document.getElementById("mainImage");
+    const thumbnails = document.querySelectorAll(".thumb");
+
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener("click", function () {
+
+            mainImage.style.opacity = 0;
+
+            setTimeout(() => {
+                mainImage.src = this.src;
+                mainImage.style.opacity = 1;
+            }, 200);
+
+            thumbnails.forEach(img => img.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const elements = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => {
+    observer.observe(el);
+
+
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add("active");
+    }
+  });
+
+});
+
+
+  
+</script>
+
+</body>
+</html>

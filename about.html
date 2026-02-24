@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="orglogo.webp" alt="Stackly" class="navbar-logo">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+
+      <!-- Menu -->
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"
+             data-bs-toggle="dropdown">
+            Home
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+            <li><a class="dropdown-item" href="#">Home 02</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="properties.html">Property</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">News</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+
+<div class="dropdown profile-dropdown">
+  <div class="user-circle dropdown-toggle"
+       data-bs-toggle="dropdown">
+    <i class="bi bi-person"></i>
+  </div>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="login.html">Login</a></li>
+    <li><a class="dropdown-item" href="register.html">Register</a></li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+</nav>
+<section class="about-header">
+  <div class="container">
+    <h1 class="about-title">About Us</h1>
+
+    <div class="breadcrumb-area">
+      <a href="index.html" class="home-link">
+        <i class="bi bi-house-fill"></i> Home
+      </a>
+      <span class="separator">></span>
+      <span class="current-page">About</span>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container about-wrapper">
+    <div class="about-image">
+      <img src="aboutimgestate.jpeg" alt="">
+    </div>
+    <div class="about-content">
+
+      <span class="about-badge">About Us</span>
+
+      <h2>The Leading Real Estate<br>Rental Marketplace</h2>
+
+      <p class="about-text">
+        Over 39,000 people work for us in more than 70 countries all over the world.
+        This breadth of global coverage, combined with specialist services.
+      </p>
+      <div class="about-features">
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="bi bi-house-heart"></i>
+          </div>
+          <span>Smart Home Design</span>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <span>Complete 24/7 Security</span>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="bi bi-emoji-smile"></i>
+          </div>
+          <span>Exceptional Lifestyle</span>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="bi bi-tree"></i>
+          </div>
+          <span>Beautiful Scene Around</span>
+        </div>
+
+      </div>
+      <div class="about-quote">
+        "Enimad minim veniam quis nostrud exercitation ullamco laboris.
+        Lorem ipsum dolor sit amet"
+      </div>
+      <a href="error.html" class="our-service-btn">OUR SERVICES</a>
+
+    </div>
+  </div>
+</section>
+<section class="services-section py-5">
+  <div class="container text-center">
+
+    <span class="sub-title">Our Services</span>
+    <h2 class="section-title mb-5">Our Main Focus</h2>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <div class="service-card" onclick="activateCard(this)">
+          <div class="icon-box1">
+            <i class="bi bi-house-door"></i>
+          </div>
+          <h4>Buy a home</h4>
+          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+          <a href="error.html">Find A Home  &rarr;</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="service-card" onclick="activateCard(this)">
+          <div class="icon-box1">
+            <i class="bi bi-cash-stack"></i>
+          </div>
+          <h4>Rent a home</h4>
+          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+          <a href="error.html">Find A Home  &rarr;</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="service-card" >
+          <div class="icon-box1">
+           <i class="bi bi-building"></i>
+          </div>
+          <h4>Sell a home</h4>
+          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+          <a href="error.html">Find A Home  &rarr;</a>
+        </div>
+      </div>
+       </div>
+  </div>
+</section>
+<section class="team-section">
+  <div class="container">
+
+    <span class="sub-title">Team</span>
+    <h2 class="section-title">Property Agents</h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-img">
+         <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=70" alt="Agent">
+          <div class="team-social">
+            <a href="error.html"><i class="bi bi-facebook"></i></a>
+            <a href="error.html"><i class="bi bi-twitter"></i></a>
+            <a href="error.html"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="team-content">
+          <h4>Steve Rogers</h4>
+          <p>Real Estate Broker</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=500&q=70" 
+     alt="Real Estate Agent Selling House" 
+     loading="lazy">
+          <div class="team-social">
+            <a href="error.html"><i class="bi bi-facebook"></i></a>
+            <a href="error.html"><i class="bi bi-twitter"></i></a>
+            <a href="error.html"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="team-content">
+          <h4>Anthony Edward</h4>
+          <p>Selling Agents</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=400&q=70" 
+     alt="Property Seller" 
+     loading="lazy">
+          <div class="team-social">
+            <a href="error.html"><i class="bi bi-facebook"></i></a>
+            <a href="error.html"><i class="bi bi-twitter"></i></a>
+            <a href="error.html"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="team-content">
+          <h4>Miranda H. Halim</h4>
+          <p>Property Seller</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</section>
+<br>
+  <br>
+<section class="news-section">
+  <div class="container">
+
+    <span class="sub-title">News & Blogs</span>
+    <h2 class="section-title">Latest News Feeds</h2>
+
+    <div class="news-wrapper">
+      <button class="slider-btns left-news" id="newsPrevBtn">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+
+      <div class="news-container">
+        <div class="news-slider" id="newsSlider">
+          <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Modern House">
+
+            <div class="news-content">
+
+              <div class="meta-row">
+                <span><i class="bi bi-person"></i> by: Admin</span>
+                <span><i class="bi bi-tag"></i> Room</span>
+              </div>
+
+              <h4>10 Brilliant Ways To Decorate Your Home</h4>
+
+              <hr>
+
+              <div class="bottom-row">
+                <span><i class="bi bi-calendar-event"></i> Jan 24, 2026</span>
+                <a href="error.html">READ MORE</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Interior">
+
+            <div class="news-content">
+
+              <div class="meta-row">
+                <span><i class="bi bi-person"></i> by: Admin</span>
+                <span><i class="bi bi-tag"></i> Interior</span>
+              </div>
+
+              <h4>The Most Inspiring Interior Design Of 2024</h4>
+
+              <hr>
+
+              <div class="bottom-row">
+                <span><i class="bi bi-calendar-event"></i> Feb 21, 2026</span>
+                <a href="error.html">READ MORE</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Estate">
+
+            <div class="news-content">
+
+              <div class="meta-row">
+                <span><i class="bi bi-person"></i> by: Admin</span>
+                <span><i class="bi bi-tag"></i> Estate</span>
+              </div>
+
+              <h4>Recent Commercial Real Estate Transactions</h4>
+
+              <hr>
+
+              <div class="bottom-row">
+                <span><i class="bi bi-calendar-event"></i> Jan 28, 2026</span>
+                <a href="error.html">READ MORE</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="news-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Property">
+
+            <div class="news-content">
+
+              <div class="meta-row">
+                <span><i class="bi bi-person"></i> by: Admin</span>
+                <span><i class="bi bi-tag"></i> Property</span>
+              </div>
+
+              <h4>Luxury Apartments With Modern Amenities</h4>
+
+              <hr>
+
+              <div class="bottom-row">
+                <span><i class="bi bi-calendar-event"></i> Jan 25, 2026</span>
+                <a href="error.html">READ MORE</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="slider-btns right-news" id="newsNextBtn">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+
+    </div>
+  </div>
+</section>
+<br>
+<br>
+
+<footer class="footer">
+
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="footer-logo mb-4">
+                    <img src="orglogo.webp" alt="Stackly Logo" class="footer-logo-img">
+                </div>
+
+                <p class="footer-text">
+                    Stackly Real Estate helps you find your dream home with trusted service and modern property solutions.
+                </p>
+
+                <ul class="footer-contact list-unstyled">
+                    <li><i class="bi bi-geo-alt"></i> Salem,TamilNadu,India</li>
+                    <li><i class="bi bi-telephone"></i> +0123-456789</li>
+                    <li><i class="bi bi-envelope"></i> example@stackly.com</li>
+                </ul>
+
+                <div class="footer-social mt-3">
+                    <a href="error.html"><i class="bi bi-facebook"></i></a>
+                    <a href="error.html"><i class="bi bi-twitter"></i></a>
+                    <a href="error.html"><i class="bi bi-linkedin"></i></a>
+                    <a href="error.html"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h5 class="footer-title">Company</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="error.html">Blog</a></li>
+                    <li><a href="properties.html">All Properties</a></li>
+                    <li><a href="error.html">Locations Map</a></li>
+                    <li><a href="error.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h5 class="footer-title">Services</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="error.html">Order Tracking</a></li>
+                    <li><a href="error.html">Wish List</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="error.html">My Account</a></li>
+                    <li><a href="error.html">Terms & Conditions</a></li>
+                    <li><a href="error.html">Promotional Offers</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h5 class="footer-title">Newsletter</h5>
+
+                <p class="footer-text">
+                    Subscribe to our weekly newsletter and receive updates via email.
+                </p>
+
+                <div class="newsletter-box">
+            <input type="email" placeholder="Email*" class="newsletter-input">
+            <a href="error.html" class="newsletter-btn">
+            <i class="bi bi-send"></i>
+       </a>
+   </div>
+
+                <h6 class="footer-title mt-4">We Accept</h6>
+                <div class="payment-icons">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+        &copy; 2026 Stackly Real Estate. All Rights Reserved.
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="about.js"></script>
+    
+</body>
+</html>
