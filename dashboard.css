@@ -340,6 +340,19 @@
     height: 220px;        
     object-fit: cover;  
 }
+#cartContainer .card{
+    transition: .3s ease;
+}
+
+#cartContainer .card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+#cartContainer .card-img-top{
+    height: 280px;
+    object-fit: cover;
+}
 .site-footer{
     background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
     color: #e5e7eb;
