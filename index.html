@@ -1,725 +1,1379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Stackly Real Estate</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Estate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
 
- <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-    <img src="orglogo.webp" alt="Stackly" class="navbar-logo">
-</a>
+  <header class="container-fluid p-0 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded-4 px-3 px-lg-4 py-3">
+      
+      <div class="d-flex align-items-center gap-3">
+        <a class="navbar-brand m-0 p-0 d-flex align-items-center" href="#">
+          <img src="Adobe Express - file.png" alt="Logo" style="width: 120px; height: auto; max-height: 50px; object-fit: contain;">
+        </a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-      <span class="navbar-toggler-icon"></span>
-</button>
+        <div class="dropdown">
+          <a class="dropdown-toggle text-decoration-none fw-semibold text-primary d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-geo-alt-fill" id="locaicon"></i>
+            <span id="selectedCity">Chennai</span>
+          </a>
 
-<div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+          <ul class="dropdown-menu shadow-sm border-0">
+            <li><a class="dropdown-item city-option" href="index.html">Chennai</a></li>
+            <li><a class="dropdown-item city-option" href="index.html">Coimbatore</a></li>
+            <li><a class="dropdown-item city-option" href="index.html">Hyderabad</a></li>
+            <li><a class="dropdown-item city-option" href="index.html">Bengaluru</a></li>
+          </ul>
+        </div>
+      </div>
 
-  <ul class="navbar-nav mx-auto">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="index.html">Home 01</a></li>
-    <li><a class="dropdown-item" href="home2.html">Home 02</a></li>
- </ul>
-  </li>
+      <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="mainNavbar">
+        <ul class="navbar-nav align-items-lg-center gap-lg-4 ms-lg-auto">
+         
 
-<li class="nav-item">
-    <a class="nav-link" href="about.html">About</a>
-</li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home1</a></li>
+              <li><a class="dropdown-item" href="home2.html">Home2</a></li>
+            </ul>
+          </li>
 
-<li class="nav-item">
-    <a class="nav-link" href="properties.html">Property</a>
-</li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="about.html">About</a>
+          </li>
 
-<li class="nav-item">
-  <a class="nav-link" href="dashboard.html">Dashboard</a>
-</li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="properties.html">Property</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="contact.html">Contact</a>
+          </li>
 
-<li class="nav-item">
-    <a class="nav-link" href="news.html">News</a>
-</li>
+          <li class="nav-item dropdown ms-lg-2">
+            <a class="btn btn-outline-primary rounded-4 px-3 py-2 dropdown-toggle d-inline-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Profile">
+              <i class="bi bi-person-fill fs-5"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+              <li>
+                <a class="dropdown-item" href="login.html">
+                  <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="register.html">
+                  <i class="bi bi-person-plus me-2"></i>Register
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<li class="nav-item">
-      <a class="nav-link" href="contact.html">Contact</a>
-</li>
+  <main class="container-fluid p-0 ">
+    <section class="mt-0">
+      <div id="mainCarousel" class="carousel slide carousel-fade shadow-sm rounded-4 overflow-hidden" data-bs-ride="carousel" data-bs-interval="4000">
 
-</ul>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-<div class="dropdown profile-dropdown">
-  <div class="user-circle dropdown-toggle" data-bs-toggle="dropdown">
-    <i class="bi bi-person"></i>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="estate1.webp" class="d-block w-100 slider-img" alt="Slide 1">
+    </div>
+
+    <div class="carousel-item">
+      <img src="estate2.webp" class="d-block w-100 slider-img" alt="Slide 2">
+    </div>
+
+    <div class="carousel-item">
+      <img src="estate3.webp" class="d-block w-100 slider-img" alt="Slide 3">
+    </div>
+  </div>
+
+  <div class="hero-overlay">
+    <h1>Properties to buy in Chennai</h1>
+    <p>7K+ listings added daily and 76K+ total verified</p>
+
+    <div class="search-card">
+      <div class="search-tabs">
+        <button class="active" type="button">BUY</button>
+        <button type="button">RENT</button>
+        <button type="button">COMMERCIAL</button>
+        <button type="button">PG/CO-LIVING</button>
+        <button type="button">PLOTS</button>
+      </div>
+
+      <form class="search-row" action="error.html">
+        <div class="search-input-box">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search for locality, landmark, project, or builder">
+        </div>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-    <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="login.html">Login</a></li>
-    <li><a class="dropdown-item" href="register.html">Register</a></li>
-</ul>
-      </div>
+    </section>
+  </main>
+  <section class="property-filters py-4">
+  <div class="container-fluid px-3 px-lg-5">
 
-    </div>
-  </div>
-</nav>
-
-<!-- <section class="hero-section">
-<div class="container">
-<h1>Search and Find <span>Luxury</span> House</h1>
-<p>Discover handpicked luxury homes designed for comfort and elegance.</p>
-<a href="#" class="btn btn-theme">Make An Enquiry</a>
-</div>
-</section> -->
-<section class="hero-section">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6 hero-left">
-                <span class="agency-label">
-                    <i class="bi bi-house-fill"></i> Real Estate Agency
-                </span>
-
-                <h1 class="hero-title">
-                    Search and Find <br>
-                    <span>Luxury</span> House
-                </h1>
-
-                <p class="hero-text">
-                    Discover handpicked luxury homes designed for comfort,
-                    elegance, and modern living.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="error.html" class="btn-enquiry">
-                        Make An Enquiry
-                    </a>
-
-                    <a href="error.html" class="icon-box">
-                        <i class="bi bi-play-fill"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-6 hero-right">
-                <img src="realestateslider1.jpg"
-                     class="main-hero-img"
-                     id="mainImage">
-
-                <div class="thumbnail-images">
-                    <img src="realestateslider1.jpg" class="thumb active">
-                    <img src="realestateslider2.jpg" class="thumb">
-                    <img src="realestateslider3.jpg" class="thumb">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<section class="about-section">
-  <div class="container">
-    <div class="about-wrapper">
-      <div class="about-images">
-        <img src="aboutimgestate.jpeg"  alt="">
-      </div>
-      <div class="about-content">
-        <span class="sub-title">About Us</span>
-        <h2>Dream Living Spaces <br> Setting New Build</h2>
-        <p class="about-text">
-          Over 39,000 people work for us in more than 70 countries all over
-          the world. This breadth of global coverage, combined with specialist services.
-        </p>
-    <div class="about-card">
-    <div class="icon">
-        <i class="bi bi-house-door"></i>
-    </div>
-    <div>
-        <h5>The Perfect Residency</h5>
-        <p>Experience refined living spaces crafted for comfort, elegance, and modern lifestyles.</p>
-    </div>
-</div>
-
-<div class="about-card">
-    <div class="icon">
-        <i class="bi bi-person-workspace"></i>
-    </div>
-    <div>
-        <h5>Global Architect Experts</h5>
-        <p>Our experienced architects deliver innovative designs with precision and excellence.</p>
-    </div>
-</div>
-
-<div class="about-card">
-    <div class="icon">
-        <i class="bi bi-geo-alt"></i>
-    </div>
-    <div>
-        <h5>Built-in Storage Cupboards</h5>
-        <p>Smartly designed storage solutions that maximize space and enhance functionality.</p>
-    </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</section>
-<section class="facility-section py-5 fade-up">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <div class="col-lg-6">
-
-        <span class="sub-title">Building Facilities</span>
-        <h2 class="main-title">
-          Making living spaces <br> More Beautiful
-        </h2>
-
-        <p class="desc">
-          Over 39,000 people work for us in more than 70 countries all over
-          the world. This breadth of global coverage, combined with specialist services.
-        </p>
-       
-      </div>
-
-      <div class="col-lg-6">
-        <div class="image-box fade-up">
-          <img src="livingroomestate.jpg" alt="Living Room">
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section class="services-section py-5">
-  <div class="container text-center">
-
-    <span class="sub-title">Our Services</span>
-    <h2 class="section-title mb-5">Our Main Focus</h2>
-
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <div class="service-card" onclick="activateCard(this)">
-          <div class="icon-box1">
-            <i class="bi bi-house-door"></i>
-          </div>
-          <h4>Buy a home</h4>
-          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
-          <a href="error.html">Find A Home  &rarr;</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="service-card" onclick="activateCard(this)">
-          <div class="icon-box1">
-            <i class="bi bi-cash-stack"></i>
-          </div>
-          <h4>Rent a home</h4>
-          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
-          <a href="error.html">Find A Home  &rarr;</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="service-card" >
-          <div class="icon-box1">
-           <i class="bi bi-building"></i>
-          </div>
-          <h4>Sell a home</h4>
-          <p>Over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
-          <a href="error.html">Find A Home  &rarr;</a>
-        </div>
-      </div>
-       </div>
-  </div>
-</section>
-<section class="apartment-section">
-  <div class="container">
-
-    <span class="sub-title">Apartment Sketch</span>
-    <h2 class="section-title">Apartments Plan</h2>
-    <div class="apartment-tabs">
-      <button class="tab-btn active" onclick="showPlan('studio', this)">The Studio</button>
-      <button class="tab-btn" onclick="showPlan('deluxe', this)">Deluxe Portion</button>
-      <button class="tab-btn" onclick="showPlan('penthouse', this)">Penthouse</button>
-      <button class="tab-btn" onclick="showPlan('topgarden', this)">Top Garden</button>
-      <button class="tab-btn" onclick="showPlan('double', this)">Double Height</button>
-    </div>
-     <div class="plan-content  active" id="studio">
-      <div class="plan-wrapper">
-        <div class="plan-details">
-          <h3>The Studio</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
-          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
-          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
-        </div>
-
-        <div class="plan-image">
-          <img src="apatmentsketch.png" alt="">
-        </div>
-      </div>
-    </div>
-     <div class="plan-content" id="deluxe">
-      <div class="plan-wrapper">
-        <div class="plan-details">
-          <h3>Deluxe Portion</h3>
-          <p>Deluxe apartment description here.</p>
-          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
-          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
-          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
-        </div>
-        <div class="plan-image">
-          <img src="apatmentsketch.png" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="plan-content" id="penthouse">
-      <div class="plan-wrapper">
-        <div class="plan-details">
-          <h3>Penthouse</h3>
-          <p>Penthouse description here.</p>
-          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
-          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
-          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
-        </div>
-        <div class="plan-image">
-          <img src="apatmentsketch.png" alt="">
-        </div>
-      </div>
-    </div>
-     <div class="plan-content" id="topgarden">
-      <div class="plan-wrapper">
-        <div class="plan-details">
-          <h3>Top Garden</h3>
-          <p>Top Garden description here.</p>
-          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
-          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
-          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
-        </div>
-        <div class="plan-image">
-          <img src="apatmentsketch.png" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="plan-content" id="double">
-      <div class="plan-wrapper">
-        <div class="plan-details">
-          <h3>Double Height</h3>
-          <p>Double Height description here.</p>
-          <div class="spec-item"><span>Total Area</span><span>2000 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bedroom</span><span>120 Sq. Ft</span></div>
-          <div class="spec-item"><span>Bathroom</span><span>40 Sq. Ft</span></div>
-          <div class="spec-item"><span>Balcony/Pets</span><span>Allowed</span></div>
-          <div class="spec-item"><span>Lounge</span><span>500 Sq. Ft</span></div>
-        </div>
-        <div class="plan-image">
-          <img src="apatmentsketch.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="area-section">
-
-  <div class="container">
-    <p class="sub-title">Area Properties</p>
-    <h2 class="section-title">Find Your Dream House <br> Search By Area</h2>
-  </div>
-
-  <div class="area-wrapper">
-
-    <button class="slider-btn left-btn" id="prevBtn">
-      <i class="bi bi-arrow-left"></i>
-    </button>
-
-    <div class="slider-container1">
-      <div class="area-slider" id="areaSlider">
-        <div class="area-card">
-          <div class="area-image">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
-            <span class="property-count">2 PROPERTIES</span>
-          </div>
-          <div class="area-content">
-            <p>San Francisco</p>
-            <h4>Mission District Area</h4>
-            <a href="#">View Property  &rarr;</a>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-image">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-            <span class="property-count">5 PROPERTIES</span>
-          </div>
-          <div class="area-content">
-            <p>New York</p>
-            <h4>Pacific Heights Area</h4>
-            <a href="error.html">View Property  &rarr;</a>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-image">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-            <span class="property-count">9 PROPERTIES</span>
-          </div>
-          <div class="area-content">
-            <p>Sedona, Arizona</p>
-            <h4>Noe Valley Zones</h4>
-            <a href="#">View Property  &rarr;</a>
-          </div>
-        </div>
-         <div class="area-card">
-          <div class="area-image">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
-            <span class="property-count">6 PROPERTIES</span>
-          </div>
-          <div class="area-content">
-            <p>Los Angeles</p>
-            <h4>Beverly Hills Area</h4>
-            <a href="error.html">View Property  &rarr;</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <button class="slider-btn right-btn" id="nextBtn">
-      <i class="bi bi-arrow-right"></i>
-    </button>
-
-  </div>
-
-</section>
-<br>
-<br>
-
-<section class="amenities-section">
-
-  <div class="container">
-    <p class="sub-title">Our Amenities</p>
-    <h2 class="section-title">Building Amenities</h2>
-
-    <div class="amenities-grid">
-
-      <div class="amenity-card">
-        <div class="amenity-icon">
-          <i class="bi bi-car-front"></i>
-        </div>
-        <span class="amenity-number">01</span>
-        <h4>Parking Space</h4>
-        <p>Here is The Good and Safe Parking Areas</p>
-      </div>
-
-      <div class="amenity-card">
-        <div class="amenity-icon">
-          <i class="bi bi-water"></i>
-        </div>
-        <span class="amenity-number">02</span>
-        <h4>Swimming Pool</h4>
-        <p> The Swimming Pool is safe for kids And give more Privacy</p>
-      </div>
-
-      <div class="amenity-card">
-        <div class="amenity-icon">
-          <i class="bi bi-shield-check"></i>
-        </div>
-        <span class="amenity-number">03</span>
-        <h4>Private Security</h4>
-        <p>The Stackly gave 24/7 Safety for All people</p>
-      </div>
-
-      <div class="amenity-card">
-        <div class="amenity-icon">
-          <i class="bi bi-hospital"></i>
-        </div>
-        <span class="amenity-number">04</span>
-        <h4>Medical Center</h4>
-        <p>We provide 24/7 Medical Center </p>
-      </div>
-      <div class="amenity-card">
-  <div class="amenity-icon">
-    <i class="bi bi-book"></i>
-  </div>
-  <span class="amenity-number">05</span>
-  <h4>Library Area</h4>
-  <p>We Provide Library Areas for Every One and  You can make Peace</p>
-</div>
-
-<div class="amenity-card">
-  <div class="amenity-icon">
-  <i class="bi bi-moon-stars"></i>
-</div>
-  <span class="amenity-number">06</span>
-  <h4>King Size Beds</h4>
-  <p>We provide Kings sizes beds are more comfortable</p>
-</div><div class="amenity-card">
-  <div class="amenity-icon">
-    <i class="bi bi-house-heart"></i>
-  </div>
-  <span class="amenity-number">07</span>
-  <h4>Smart Homes</h4>
-  <p> very Important we have Smart technology homes</p>
-</div>
-<div class="amenity-card">
-  <div class="amenity-icon">
-    <i class="bi bi-balloon"></i>
-  </div>
-  <span class="amenity-number">08</span>
-  <h4>Kid's Playland</h4>
-  <p>We provide Kids Play ground</p>
-</div>
- </div>
-  </div>
-</section>
-<br>
-<br>
-
-<section class="testimonial-section">
-
-  <div class="overlay"></div>
-
-  <div class="container testimonial-container">
-
-    <div class="testimonial-header">
-      <div>
-        <p class="sub-title">Client's Testimonial</p>
-        <h2>See What's Our Client<br>Says About Us</h2>
-      </div>
-
-      <!-- <div class="testimonial-arrows">
-        <button class="testi-btn prevBtn">
-          <i class="bi bi-arrow-left"></i>
+    <div class="city-tabs-wrapper mb-3">
+      <div class="city-tabs">
+        <button class="city-tab active" type="button">
+          <span>All</span>
+          <small>Projects - 171</small>
+          <small>Available - 80</small>
         </button>
-        <button class="testi-btn nextBtn">
-          <i class="bi bi-arrow-right"></i>
-        </button>
-      </div> -->
-    </div>
-    <div class="testimonial-wrapper">
-      <div class="testimonial-slider">
-        <div class="testimonial-card active">
-          <div class="client-info">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg">
-            <div>
-              <h4>Jacob William</h4>
-              <span>SELLING AGENTS</span>
-            </div>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="client-info">
-            <img src="https://randomuser.me/api/portraits/men/45.jpg">
-            <div>
-              <h4>Michael John</h4>
-              <span>PROPERTY DEALER</span>
-            </div>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-half"></i>
-            </div>
-          </div>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="client-info">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg">
-            <div>
-              <h4>Sarah Lee</h4>
-              <span>INVESTOR</span>
-            </div>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </div>
-          </div>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="client-info">
-            <img src="https://randomuser.me/api/portraits/men/60.jpg">
-            <div>
-              <h4>Daniel Smith</h4>
-              <span>HOME BUYER</span>
-            </div>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <p>Excepteur sint occaecat cupidatat non proident.</p>
-        </div>
 
+        <button class="city-tab" type="button">
+          <span>Chennai</span>
+          <small>Projects - 117</small>
+          <small>Available - 44</small>
+        </button>
+
+        <button class="city-tab" type="button">
+          <span>Bengaluru</span>
+          <small>Projects - 20</small>
+          <small>Available - 13</small>
+        </button>
+
+        <button class="city-tab" type="button">
+          <span>Coimbatore</span>
+          <small>Projects - 21</small>
+          <small>Available - 10</small>
+        </button>
+
+        <button class="city-tab" type="button">
+          <span>Hyderabad</span>
+          <small>Projects - 10</small>
+          <small>Available - 10</small>
+        </button>
+
+        <button class="city-tab" type="button">
+          <span>Dubai</span>
+          <small>Projects - 1</small>
+          <small>Available - 1</small>
+        </button>
+
+        <button class="city-tab" type="button">
+          <span>Pune</span>
+          <small>Projects - 2</small>
+          <small>Available - 2</small>
+        </button>
+
+        <button class="city-tab" type="button">
+          <span>Delhi</span>
+          <small>Projects - NA</small>
+          <small>Available - NA</small>
+        </button>
       </div>
     </div>
 
-  </div>
-</section>
-<br>
-<br>
-
-<footer class="footer">
-     <div class="container">
-        <div class="row gy-5">
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-logo mb-4">
-                    <img src="orglogo.webp" alt="Stackly Logo" class="footer-logo-img">
-                </div>
-
-                <p class="footer-text">
-                    Stackly Real Estate helps you find your dream home with
-                    trusted service and modern property solutions.
-                </p>
-
-                <ul class="footer-contact list-unstyled">
-                    <li><i class="bi bi-geo-alt"></i> Salem,TamilNadu,India</li>
-                    <li><i class="bi bi-telephone"></i> +0123-456789</li>
-                    <li><i class="bi bi-envelope"></i> example@stackly.com</li>
-                </ul>
-
-                <div class="footer-social mt-3">
-                    <a href="error.html"><i class="bi bi-facebook"></i></a>
-                    <a href="error.html"><i class="bi bi-twitter"></i></a>
-                    <a href="error.html"><i class="bi bi-linkedin"></i></a>
-                    <a href="error.html"><i class="bi bi-youtube"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="footer-title">Company</h5>
-                <ul class="footer-links list-unstyled">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="error.html">Blog</a></li>
-                    <li><a href="properties.html">All Properties</a></li>
-                    <li><a href="error.html">Locations Map</a></li>
-                    <li><a href="error.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="footer-title">Services</h5>
-                <ul class="footer-links list-unstyled">
-                    <li><a href="error.html">Order Tracking</a></li>
-                    <li><a href="error.html">Wish List</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="error.html">Terms & Conditions</a></li>
-                    <li><a href="error.html">Promotional Offers</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <h5 class="footer-title">Newsletter</h5>
-
-                <p class="footer-text">
-                    Subscribe to our weekly newsletter and receive updates via email.
-                </p>
-
-                <div class="newsletter-box">
-            <input type="email" placeholder="Email*" class="newsletter-input">
-            <a href="error.html" class="newsletter-btn">
-            <i class="bi bi-send"></i>
-       </a>
-   </div>
-
-                <h6 class="footer-title mt-4">We Accept</h6>
-                <div class="payment-icons">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer-bottom text-center">
-        &copy; 2026 Stackly Real Estate. All Rights Reserved.
-    </div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
   
-document.addEventListener("DOMContentLoaded", function () {
+    <form class="filter-bar" action="error.html">
+      <div class="filter-item">
+        <label>Property Type</label>
+        <select>
+          <option selected>Select</option>
+          <option>Apartment</option>
+          <option>Villa</option>
+          <option>Plot</option>
+          <option>Commercial</option>
+        </select>
+      </div>
 
-    const mainImage = document.getElementById("mainImage");
-    const thumbnails = document.querySelectorAll(".thumb");
+      <div class="filter-item">
+        <label>Project Status</label>
+        <select>
+          <option selected>Select</option>
+          <option>New Launch</option>
+          <option>Under Construction</option>
+          <option>Ready to Move</option>
+        </select>
+      </div>
 
-    thumbnails.forEach(thumb => {
-        thumb.addEventListener("click", function () {
+      <div class="filter-item">
+        <label>Handover</label>
+        <select>
+          <option selected>Select</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+        </select>
+      </div>
 
-            mainImage.style.opacity = 0;
+      <div class="filter-item">
+        <label>Configuration</label>
+        <select>
+          <option selected>Select</option>
+          <option>1 BHK</option>
+          <option>2 BHK</option>
+          <option>3 BHK</option>
+          <option>4 BHK</option>
+        </select>
+      </div>
 
-            setTimeout(() => {
-                mainImage.src = this.src;
-                mainImage.style.opacity = 1;
-            }, 200);
+      <div class="filter-item">
+        <label>Price</label>
+        <select>
+          <option selected>Select</option>
+          <option>Below 50L</option>
+          <option>50L - 1Cr</option>
+          <option>1Cr - 2Cr</option>
+          <option>2Cr+</option>
+        </select>
+      </div>
 
-            thumbnails.forEach(img => img.classList.remove("active"));
-            this.classList.add("active");
-        });
+      <button type="submit" class="search-btn1">
+        Search
+      </button>
+    </form>
+
+  </div>
+</section>
+<div class="container py-5">
+    <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+  <div class="property-card">
+    <div class="image-box">
+      <img src="aprt1.webp" class="img-fluid w-100" alt="Commercial complex">
+      <span class="badge-launch">New Launch</span>
+    </div>
+
+    <div class="card-body-custom">
+      <div class="title-row">
+        <h3>Apartments</h3>
+        <span class="unit-badge">120 Units</span>
+      </div>
+
+      <h4>₹ 75L to ₹ 96L</h4>
+
+      <div class="property-meta">
+        <p>
+          <i class="bi bi-geo-alt-fill meta-icon"></i>
+          <span>Kolathur Chennai</span>
+        </p>
+
+        <p>
+          <i class="bi bi-house-door-fill meta-icon"></i>
+          <span>3 BHK</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building meta-icon"></i>
+          <span>Total Units: 220</span>
+        </p>
+
+        <p>
+          <i class="bi bi-rulers meta-icon"></i>
+          <span>2,020 - 3,480 sq.ft</span>
+        </p>
+
+        <p>
+          <i class="bi bi-clock-fill meta-icon"></i>
+          <span>Ready to Move</span>
+        </p>
+      </div>
+
+      <p class="serving-location">
+        Serving Location : Selaiyur, Chromepet, Pallavaram
+      </p>
+
+      <a href="error.html" class="btn-view text-decoration-none">
+        View Details
+      </a>
+    </div>
+  </div>
+</div>
+
+        <div class="col-lg-4 col-md-6">
+  <div class="property-card">
+    <div class="image-box">
+      <img src="aprt2.webp" class="img-fluid w-100" alt="Commercial complex">
+      <span class="badge-launch">New Launch</span>
+    </div>
+
+    <div class="card-body-custom">
+      <div class="title-row">
+        <h3>Commercial complex</h3>
+        <span class="unit-badge">120 Units</span>
+      </div>
+
+      <h4>₹ 55L to ₹ 76L</h4>
+
+      <div class="property-meta">
+        <p>
+          <i class="bi bi-geo-alt-fill meta-icon"></i>
+          <span>East Tambaram</span>
+        </p>
+
+        <p>
+          <i class="bi bi-house-door-fill meta-icon"></i>
+          <span>2 BHK</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building meta-icon"></i>
+          <span>Total Units: 120</span>
+        </p>
+
+        <p>
+          <i class="bi bi-rulers meta-icon"></i>
+          <span>1,020 - 1,480 sq.ft</span>
+        </p>
+
+        <p>
+          <i class="bi bi-clock-fill meta-icon"></i>
+          <span>Ready to Move</span>
+        </p>
+      </div>
+
+      <p class="serving-location">
+        Serving Location : Kolathur, Chepak, Pallavaram
+      </p>
+
+      <a href="error.html" class="btn-view text-decoration-none">
+        View Details
+      </a>
+    </div>
+  </div>
+</div>
+        
+
+       
+    <div class="col-lg-4 col-md-6">
+  <div class="property-card">
+    <div class="image-box">
+      <img src="aprt3.webp" class="img-fluid w-100" alt="Commercial complex">
+      <span class="badge-launch">New Launch</span>
+    </div>
+
+    <div class="card-body-custom">
+      <div class="title-row">
+        <h3>Mysore Villa</h3>
+        <span class="unit-badge">120 Units</span>
+      </div>
+
+      <h4>₹ 90L to ₹ 96L</h4>
+
+      <div class="property-meta">
+        <p>
+          <i class="bi bi-geo-alt-fill meta-icon"></i>
+          <span>Mysore Road</span>
+        </p>
+
+        <p>
+          <i class="bi bi-house-door-fill meta-icon"></i>
+          <span>4 BHK</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building meta-icon"></i>
+          <span>Total Units: 100</span>
+        </p>
+
+        <p>
+          <i class="bi bi-rulers meta-icon"></i>
+          <span>1,020 - 1,480 sq.ft</span>
+        </p>
+
+        <p>
+          <i class="bi bi-clock-fill meta-icon"></i>
+          <span>Ready to Move</span>
+        </p>
+      </div>
+
+      <p class="serving-location">
+        Serving Location : Mysore Road, Kengeri, Nagarbhavi
+      </p>
+
+      <a href="error.html" class="btn-view text-decoration-none">
+        View Details
+      </a>
+    </div>
+  </div>
+</div>
+       <div class="col-lg-4 col-md-6">
+  <div class="property-card">
+    <div class="image-box">
+      <img src="aprt4.webp" class="img-fluid w-100" alt="Commercial complex">
+      <span class="badge-launch">New Launch</span>
+    </div>
+
+    <div class="card-body-custom">
+      <div class="title-row">
+        <h3>Single House</h3>
+        <span class="unit-badge">120 Units</span>
+      </div>
+
+      <h4>₹ 50L to ₹ 60L</h4>
+
+      <div class="property-meta">
+        <p>
+          <i class="bi bi-geo-alt-fill meta-icon"></i>
+          <span>Benguluru </span>
+        </p>
+
+        <p>
+          <i class="bi bi-house-door-fill meta-icon"></i>
+          <span>2 BHK</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building meta-icon"></i>
+          <span>Total Units: 100</span>
+        </p>
+
+        <p>
+          <i class="bi bi-rulers meta-icon"></i>
+          <span>1,020 - 1,480 sq.ft</span>
+        </p>
+
+        <p>
+          <i class="bi bi-clock-fill meta-icon" id="progress"></i>
+          <span>On progress</span>
+        </p>
+      </div>
+
+      <p class="serving-location">
+        Serving Location : Benguluru Karnataka
+      </p>
+
+      <a href="error.html" class="btn-view text-decoration-none">
+        View Details
+      </a>
+    </div>
+  </div>
+</div>
+        <div class="col-lg-4 col-md-6">
+  <div class="property-card">
+    <div class="image-box">
+      <img src="aprt5.webp" class="img-fluid w-100" alt="Commercial complex">
+      <span class="badge-launch">New Launch</span>
+    </div>
+
+    <div class="card-body-custom">
+      <div class="title-row">
+        <h3>Hyderabad Apart</h3>
+        <span class="unit-badge">120 Units</span>
+      </div>
+
+      <h4>₹ 70L to ₹ 80L</h4>
+
+      <div class="property-meta">
+        <p>
+          <i class="bi bi-geo-alt-fill meta-icon"></i>
+          <span>Hyderabad</span>
+        </p>
+
+        <p>
+          <i class="bi bi-house-door-fill meta-icon"></i>
+          <span>4 BHK</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building meta-icon"></i>
+          <span>Total Units: 200</span>
+        </p>
+
+        <p>
+          <i class="bi bi-rulers meta-icon"></i>
+          <span>1,220 - 1,480 sq.ft</span>
+        </p>
+
+        <p>
+          <i class="bi bi-clock-fill meta-icon"></i>
+          <span>Ready to Move</span>
+        </p>
+      </div>
+
+      <p class="serving-location">
+        Serving Location :Hyderabad Telangana
+      </p>
+
+      <a href="error.html" class="btn-view text-decoration-none">
+        View Details
+      </a>
+    </div>
+  </div>
+</div>
+        <div class="col-lg-4 col-md-6">
+  <div class="property-card">
+    <div class="image-box">
+      <img src="aprt6.webp" class="img-fluid w-100" alt="Commercial complex">
+      <span class="badge-launch">New Launch</span>
+    </div>
+
+    <div class="card-body-custom">
+      <div class="title-row">
+        <h3>Plot </h3>
+        <span class="unit-badge">120 Units</span>
+      </div>
+
+      <h4>₹ 70L to ₹ 76L</h4>
+
+      <div class="property-meta">
+        <p>
+          <i class="bi bi-geo-alt-fill meta-icon"></i>
+          <span>OMR, Chennai</span>
+        </p>
+
+        <p>
+          <i class="bi bi-house-door-fill meta-icon"></i>
+          <span>4 BHK</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building meta-icon"></i>
+          <span>Total Units: 100</span>
+        </p>
+
+        <p>
+          <i class="bi bi-rulers meta-icon"></i>
+          <span>1,020 - 1,480 sq.ft</span>
+        </p>
+
+        <p>
+          <i class="bi bi-clock-fill meta-icon" id="progress"></i>
+          <span>On progress</span>
+        </p>
+      </div>
+
+      <p class="serving-location">
+        Serving Location : Tambaram West, Poonamallee, Tambaram, Vandalur, Kilambakkam
+      </p>
+
+      <a href="error.html" class="btn-view text-decoration-none">
+        View Details
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<section class="amenities-section py-5">
+  <div class="container-fluid px-3 px-lg-5">
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-8">
+        <p class="section-kicker mb-2">PREMIUM LIFESTYLE</p>
+        <h2 class="section-title mb-2">Amenities that matter in real life</h2>
+        <p class="section-subtitle mb-0">
+          Modern facilities, great comfort, and a strong community feel — all in one place.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+        <a href="error.html" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold">
+          Explore More
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4 amenities-grid">
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-shield-check"></i></div>
+          <h4>24/7 Security</h4>
+          <p>Gated access, CCTV, and round-the-clock security support.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+          <h4>Power Backup</h4>
+          <p>Uninterrupted power supply for common areas and essential services.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-water"></i></div>
+          <h4>Swimming Pool</h4>
+          <p>Relax, recharge, and enjoy a premium leisure experience.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-tree-fill"></i></div>
+          <h4>Green Spaces</h4>
+          <p>Landscaped gardens and open spaces for fresh air and comfort.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-p-circle-fill"></i></div>
+          <h4>Car Parking</h4>
+          <p>Dedicated parking with easy access and organized vehicle flow.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-house-heart-fill"></i></div>
+          <h4>Club House</h4>
+          <p>Community spaces for events, fitness, and lifestyle activities.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-basket-fill"></i></div>
+          <h4>Children Play Area</h4>
+          <p>Safe and fun space for kids to play and enjoy.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="bi bi-emoji-smile-fill"></i></div>
+          <h4>Community Zone</h4>
+          <p>Perfect space for gatherings, relaxation, and social life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finance-section py-5">
+  <div class="container-fluid px-3 px-lg-5">
+    <div class="finance-header mb-4">
+      <div>
+        <p class="finance-kicker mb-2">SMART FINANCE</p>
+        <h2 class="finance-title mb-2">Real-time EMI Calculator</h2>
+        <p class="finance-subtitle mb-0">
+          Estimate your monthly payment instantly and compare property budgets like a pro.
+        </p>
+      </div>
+      <div class="finance-badge">
+        Live calculation
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+     
+      <div class="col-lg-7">
+        <div class="finance-card h-100">
+          <div class="finance-card-head mb-4">
+            <h3>Loan Inputs</h3>
+            <span>Adjust values and see results instantly</span>
+          </div>
+
+          <div class="range-group">
+            <div class="range-top">
+              <label>Property Price</label>
+              <strong id="priceValue">₹ 75,00,000</strong>
+            </div>
+            <input type="range" id="priceRange" min="2000000" max="25000000" step="50000" value="7500000">
+          </div>
+
+          <div class="range-group">
+            <div class="range-top">
+              <label>Down Payment</label>
+              <strong id="downValue">₹ 15,00,000</strong>
+            </div>
+            <input type="range" id="downRange" min="0" max="15000000" step="50000" value="1500000">
+          </div>
+
+          <div class="range-group">
+            <div class="range-top">
+              <label>Interest Rate</label>
+              <strong id="rateValue">8.5%</strong>
+            </div>
+            <input type="range" id="rateRange" min="6" max="14" step="0.1" value="8.5">
+          </div>
+
+          <div class="range-group">
+            <div class="range-top">
+              <label>Tenure</label>
+              <strong id="tenureValue">20 Years</strong>
+            </div>
+            <input type="range" id="tenureRange" min="5" max="30" step="1" value="20">
+          </div>
+
+          <div class="affordability-box mt-4">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span>Affordability</span>
+              <strong id="affordText">Comfortable</strong>
+            </div>
+            <div class="progress custom-progress">
+              <div class="progress-bar" id="affordBar" style="width: 42%"></div>
+            </div>
+            <small class="text-muted d-block mt-2">
+              Based on your loan-to-value ratio and estimated EMI.
+            </small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="finance-result h-100">
+          <div class="result-top">
+            <p class="mb-1">Monthly EMI</p>
+            <h1 id="emiValue">₹ 64,847</h1>
+            <small>Approximate monthly payment</small>
+          </div>
+
+          <div class="result-grid mt-4">
+            <div class="result-box">
+              <span>Loan Amount</span>
+              <strong id="loanValue">₹ 60,00,000</strong>
+            </div>
+
+            <div class="result-box">
+              <span>Total Interest</span>
+              <strong id="interestValue">₹ 55,63,320</strong>
+            </div>
+
+            <div class="result-box">
+              <span>Total Payment</span>
+              <strong id="totalValue">₹ 1,15,63,320</strong>
+            </div>
+
+            <div class="result-box">
+              <span>LTV Ratio</span>
+              <strong id="ltvValue">80%</strong>
+            </div>
+          </div>
+
+          <div class="summary-card mt-4">
+            <h4>Quick Summary</h4>
+            <p id="summaryText">
+              You are financing 80% of the property value with a stable EMI profile.
+            </p>
+          </div>
+
+          <a href="error.html" class="btn btn-primary w-100 mt-4 finance-action">
+            Explore Matching Properties
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="enquiry-section py-5">
+  <div class="container-fluid px-3 px-lg-5">
+    <div class="row g-4 align-items-stretch">
+      
+      <div class="col-lg-5">
+        <div class="enquiry-info h-100">
+          <p class="section-kicker mb-2">GET IN TOUCH</p>
+          <h2 class="section-title mb-3">Enquiry Form for Your Dream Property</h2>
+          <p class="section-subtitle mb-4">
+            Share your budget, preferred location, property type, and requirements.
+            Our team will connect with you with the best matching properties.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <i class="bi bi-house-door-fill"></i>
+              <div>
+                <h5>Buyers & Investors</h5>
+                <p>Get property options based on budget and location.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <h5>Location Assistance</h5>
+                <p>Choose Chennai, Coimbatore, Bengaluru, and more.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-shield-check"></i>
+              <div>
+                <h5>Verified Listings</h5>
+                <p>Only trusted and updated real estate listings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight-box mt-4">
+            <h5>Need urgent callback?</h5>
+            <p>Drop your details and our real estate consultant will contact you shortly.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-lg-7">
+        <div class="enquiry-form-card h-100">
+          <form id="enquiryForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <div class="input-wrap">
+                  <i class="bi bi-person-fill"></i>
+                  <input type="text" class="form-control custom-input" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Mobile Number</label>
+                <div class="input-wrap">
+                  <i class="bi bi-telephone-fill"></i>
+                  <input type="tel" class="form-control custom-input" id="phone" placeholder="10 digit mobile number" required pattern="[0-9]{10}">
+                </div>
+                <div class="invalid-feedback">Enter a valid 10 digit phone number.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Email Address</label>
+                <div class="input-wrap">
+                  <i class="bi bi-envelope-fill"></i>
+                  <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="invalid-feedback">Enter a valid email address.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">City</label>
+                <div class="input-wrap">
+                  <i class="bi bi-building-fill"></i>
+                  <select class="form-select custom-input" id="city" required>
+                    <option value="" selected>Select city</option>
+                    <option>Chennai</option>
+                    <option>Coimbatore</option>
+                    <option>Bengaluru</option>
+                    <option>Hyderabad</option>
+                    <option>Pune</option>
+                    <option>Delhi</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Please select a city.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Property Type</label>
+                <div class="input-wrap">
+                  <i class="bi bi-house-door"></i>
+                  <select class="form-select custom-input" id="propertyType" required>
+                    <option value="" selected>Select property type</option>
+                    <option>Apartment</option>
+                    <option>Villa</option>
+                    <option>Plot</option>
+                    <option>Commercial</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Please select property type.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Configuration</label>
+                <div class="input-wrap">
+                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                  <select class="form-select custom-input" id="config" required>
+                    <option value="" selected>Select config</option>
+                    <option>1 BHK</option>
+                    <option>2 BHK</option>
+                    <option>3 BHK</option>
+                    <option>4 BHK</option>
+                    <option>5 BHK</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Please select configuration.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Budget</label>
+                <div class="input-wrap">
+                  <i class="bi bi-currency-rupee"></i>
+                  <select class="form-select custom-input" id="budget" required>
+                    <option value="" selected>Select budget</option>
+                    <option>Below 50L</option>
+                    <option>50L - 1Cr</option>
+                    <option>1Cr - 2Cr</option>
+                    <option>2Cr - 5Cr</option>
+                    <option>5Cr+</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Please select budget.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Possession</label>
+                <div class="input-wrap">
+                  <i class="bi bi-calendar-check-fill"></i>
+                  <select class="form-select custom-input" id="possession" required>
+                    <option value="" selected>Select possession</option>
+                    <option>Immediate</option>
+                    <option>Within 6 Months</option>
+                    <option>6 - 12 Months</option>
+                    <option>1 Year+</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">Please select possession.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Preferred Locality</label>
+                <div class="input-wrap">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <input type="text" class="form-control custom-input" id="locality" placeholder="Example: Kolathur, Tambaram, OMR" required>
+                </div>
+                <div class="invalid-feedback">Please enter preferred locality.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Your Requirement</label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="bi bi-chat-dots-fill textarea-icon"></i>
+                  <textarea class="form-control custom-input" id="message" rows="4" placeholder="Tell us your requirement in detail" required></textarea>
+                </div>
+                <div class="invalid-feedback">Please write your requirement.</div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check custom-check">
+                  <input class="form-check-input" type="checkbox" id="callConsent" required>
+                  <label class="form-check-label" for="callConsent">
+                    I agree to receive call / WhatsApp updates about matching properties.
+                  </label>
+                  <div class="invalid-feedback">Please accept the consent checkbox.</div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn submit-btn w-100">
+                  <i class="bi bi-send-fill me-2"></i> Submit Enquiry
+                </button>
+              </div>
+
+              <div class="col-12">
+                <div class="success-box d-none" id="successBox">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Your enquiry has been submitted successfully. Our team will contact you soon.</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="cities-section py-5">
+  <div class="container-fluid px-3 px-lg-5">
+    <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-5">
+      <div>
+        <p class="section-kicker mb-2">TOP CITIES</p>
+        <h2 class="section-title mb-0">Explore Real Estate in Popular Indian Cities</h2>
+      </div>
+
+      <a href="error.html" class="view-more-btn text-decoration-none">
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="row g-4 cities-grid">
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="delhi.webp" alt="Delhi">
+          <div class="city-content">
+            <h4>Delhi / NCR</h4>
+            <p>172,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="banglore.webp" alt="Bangalore">
+          <div class="city-content">
+            <h4>Bangalore</h4>
+            <p>54,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="pune.webp" alt="Pune">
+          <div class="city-content">
+            <h4>Pune</h4>
+            <p>38,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="chennai.webp" alt="Chennai">
+          <div class="city-content">
+            <h4>Chennai</h4>
+            <p>39,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="mumbai.webp" alt="Mumbai">
+          <div class="city-content">
+            <h4>Mumbai</h4>
+            <p>43,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="hyderabad.webp" alt="Hyderabad">
+          <div class="city-content">
+            <h4>Hyderabad</h4>
+            <p>31,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="kolkata.webp" alt="Kolkata">
+          <div class="city-content">
+            <h4>Kolkata</h4>
+            <p>34,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <a href="error.html" class="city-card text-decoration-none">
+          <img src="ahmadabed.webp" alt="Ahmedabad">
+          <div class="city-content">
+            <h4>Ahmedabad</h4>
+            <p>22,000+ Properties</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer" >
+  <div class="container-fluid px-3 px-lg-5 py-5">
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo text-decoration-none">
+            <img src="Adobe Express - file.png" alt="Logo">
+          </a>
+
+          <p class="footer-text">
+            Stackly is a premium real estate platform helping buyers find the right home,
+            apartment, villa, plot, or commercial property with a smooth digital experience.
+          </p>
+
+          <div class="footer-social">
+            <a href="error.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="error.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="error.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="error.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="error.html">About Us</a></li>
+          <li><a href="error.html">Properties</a></li>
+          <li><a href="error.html">Cities</a></li>
+          <li><a href="error.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="error.html">Buy Property</a></li>
+          <li><a href="error.html">Rent Property</a></li>
+          <li><a href="error.html">Commercial Projects</a></li>
+          <li><a href="error.html">EMI Calculator</a></li>
+          <li><a href="error.html">Enquiry Support</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Address</h5>
+        <div class="footer-contact">
+          <p><i class="bi bi-geo-alt-fill"></i> Chennai, Tamil Nadu, India</p>
+          <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+          <p><i class="bi bi-envelope-fill"></i> support@stackly.com</p>
+          <p><i class="bi bi-clock-fill"></i> Mon - Sat : 9:00 AM - 7:00 PM</p>
+        </div>
+
+        <div class="newsletter-box">
+          <h6>Subscribe</h6>
+          <p>Get latest property updates and offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <!-- <button>Join</button> -->
+           <a href="error.html" class="btn btn-primary w-25">Join</a>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider my-4">
+
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">
+        &copy; 2026 Stackly. All rights reserved.
+      </p>
+
+      <div class="footer-bottom-links">
+        <a href="error.html">Privacy Policy</a>
+        <a href="error.html">Terms & Conditions</a>
+        <a href="error.html">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.querySelectorAll('.city-option').forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('selectedCity').textContent = this.textContent.trim();
+      });
     });
+  </script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
 
+  gsap.from(".section-kicker, .section-title, .section-subtitle", {
+    scrollTrigger: {
+      trigger: ".amenities-section",
+      start: "top 80%"
+    },
+    y: 25,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.1,
+    ease: "power3.out"
+  });
+
+  gsap.fromTo(".amenity-card",
+{
+  opacity: 0,
+  y: 50
+},
+{
+  opacity: 1,
+  y: 0,
+  duration: 0.8,
+  stagger: 0.1,
+  ease: "power3.out",
+  scrollTrigger:{
+      trigger: ".amenities-grid",
+      start: "top 80%"
+  }
 });
+</script>
+<script>
+  const priceRange = document.getElementById("priceRange");
+  const downRange = document.getElementById("downRange");
+  const rateRange = document.getElementById("rateRange");
+  const tenureRange = document.getElementById("tenureRange");
 
-document.addEventListener("DOMContentLoaded", function () {
+  const priceValue = document.getElementById("priceValue");
+  const downValue = document.getElementById("downValue");
+  const rateValue = document.getElementById("rateValue");
+  const tenureValue = document.getElementById("tenureValue");
 
-  const elements = document.querySelectorAll(".fade-up");
+  const emiValue = document.getElementById("emiValue");
+  const loanValue = document.getElementById("loanValue");
+  const interestValue = document.getElementById("interestValue");
+  const totalValue = document.getElementById("totalValue");
+  const ltvValue = document.getElementById("ltvValue");
+  const affordBar = document.getElementById("affordBar");
+  const affordText = document.getElementById("affordText");
+  const summaryText = document.getElementById("summaryText");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
+  const formatINR = (num) => {
+    return new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+      maximumFractionDigits: 0
+    }).format(num);
+  };
+
+  function calculateEMI() {
+    const price = Number(priceRange.value);
+    let down = Number(downRange.value);
+    const rate = Number(rateRange.value);
+    const years = Number(tenureRange.value);
+
+    if (down > price * 0.9) {
+      down = Math.floor(price * 0.9);
+      downRange.value = down;
+    }
+
+    const loan = price - down;
+    const months = years * 12;
+    const monthlyRate = rate / 12 / 100;
+
+    let emi = 0;
+    if (monthlyRate > 0) {
+      emi = loan * monthlyRate * Math.pow(1 + monthlyRate, months) / (Math.pow(1 + monthlyRate, months) - 1);
+    } else {
+      emi = loan / months;
+    }
+
+    const total = emi * months;
+    const interest = total - loan;
+    const ltv = Math.round((loan / price) * 100);
+
+    priceValue.textContent = formatINR(price);
+    downValue.textContent = formatINR(down);
+    rateValue.textContent = `${rate.toFixed(1)}%`;
+    tenureValue.textContent = `${years} Years`;
+
+    emiValue.textContent = formatINR(emi);
+    loanValue.textContent = formatINR(loan);
+    interestValue.textContent = formatINR(interest);
+    totalValue.textContent = formatINR(total);
+    ltvValue.textContent = `${ltv}%`;
+
+    const affordability = Math.max(10, Math.min(95, 100 - ltv));
+    affordBar.style.width = `${affordability}%`;
+
+    if (affordability >= 70) {
+      affordText.textContent = "Very Comfortable";
+      summaryText.textContent = "You have a strong down payment and a comfortable EMI profile.";
+    } else if (affordability >= 45) {
+      affordText.textContent = "Comfortable";
+      summaryText.textContent = "You are financing a balanced share of the property value.";
+    } else {
+      affordText.textContent = "Stretching";
+      summaryText.textContent = "Consider a higher down payment or longer tenure for better cash flow.";
+    }
+  }
+
+  [priceRange, downRange, rateRange, tenureRange].forEach(el => {
+    el.addEventListener("input", calculateEMI);
+  });
+
+  calculateEMI();
+</script>
+<script>
+  const form = document.getElementById("enquiryForm");
+  const successBox = document.getElementById("successBox");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const inputs = form.querySelectorAll("input, select, textarea");
+    let firstInvalid = null;
+    let isValid = true;
+
+    inputs.forEach((field) => {
+      field.classList.remove("shake");
+
+      if (!field.checkValidity()) {
+        isValid = false;
+        field.classList.add("shake");
+        if (!firstInvalid) firstInvalid = field;
       }
     });
-  }, {
-    threshold: 0.1
-  });
 
-  elements.forEach(el => {
-    observer.observe(el);
+    form.classList.add("was-validated");
 
-
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight) {
-      el.classList.add("active");
+    if (!isValid) {
+      successBox.classList.add("d-none");
+      if (firstInvalid) firstInvalid.focus();
+      return;
     }
+
+    successBox.classList.remove("d-none");
+    successBox.classList.add("animate-success");
+
+    form.reset();
+    form.classList.remove("was-validated");
+
+    setTimeout(() => {
+      successBox.classList.add("d-none");
+    }, 4000);
+  });
+</script>
+<!-- <script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".section-kicker, .section-title, .view-more-btn", {
+    scrollTrigger: {
+      trigger: ".cities-section",
+      start: "top 80%"
+    },
+    y: 20,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.08,
+    ease: "power3.out"
   });
 
+  gsap.from(".city-card", {
+  scrollTrigger: {
+    trigger: ".cities-grid",
+    start: "top 85%"
+  },
+  y: 40,
+  duration: 0.75,
+  stagger: 0.08,
+  ease: "power3.out"
 });
-
-
-  
-</script>
-
+</script> -->
 </body>
 </html>
