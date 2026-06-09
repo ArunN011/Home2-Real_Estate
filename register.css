@@ -107,6 +107,17 @@ body {
     border-radius: 5px;
     transition: 0.3s ease;
 }
+.login-text a{
+    color: #ff5a3c;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.login-text a:hover{
+    color: #e6492d;
+    text-decoration: underline;
+}
 
 .btn-theme:hover {
     background: #e14b30;
