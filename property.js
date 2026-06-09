@@ -65,13 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const properties = [
     { id: 1, title: "Luxury Villa", location: "Chicago", price: 34900, type: "rent", img: "aprt1.webp" },
-    { id: 2, title: "Modern Apartment", location: "New York", price: 52000, type: "sale", img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" },
-    { id: 3, title: "Beach House", location: "Miami", price: 72000, type: "rent", img: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=80"},
-    { id: 4, title: "City Studio", location: "Los Angeles", price: 25000, type: "rent",img: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80" },
-    { id: 5, title: "Duplex Home", location: "Texas", price: 48000, type: "sale", img: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80" },
-    { id: 6, title: "Family House", location: "Boston", price: 39000, type: "rent",img: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" },
-    { id: 7, title: "Premium Condo", location: "Seattle", price: 60000, type: "sale", img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" },
-    { id: 8, title: "Luxury Penthouse", location: "San Diego", price: 95000, type: "sale", img: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80" }
+    { id: 2, title: "Modern Apartment", location: "New York", price: 52000, type: "sale", img: "aprt3.webp" },
+    { id: 3, title: "Beach House", location: "Miami", price: 72000, type: "rent", img: "aprt2.webp" },
+    { id: 4, title: "City Studio", location: "Los Angeles", price: 25000, type: "rent",img: "house1.webp" },
+    { id: 5, title: "Duplex Home", location: "Texas", price: 48000, type: "sale", img: "house2.webp" },
+    { id: 6, title: "Family House", location: "Boston", price: 39000, type: "rent",img: "house3.webp" },
+    { id: 7, title: "Premium Condo", location: "Seattle", price: 60000, type: "sale", img: "aprt4.webp" },
+    { id: 8, title: "Luxury Penthouse", location: "San Diego", price: 95000, type: "sale", img: "aprt5.webp" }
   ];
 
   let wishlist = loggedUser
