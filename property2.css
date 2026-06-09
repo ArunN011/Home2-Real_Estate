@@ -221,8 +221,15 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color:#000;
 }
-
+.icon-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 .icon-btn:hover {
   background: #ff5a3c;
   color: #fff;
