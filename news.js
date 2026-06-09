@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       id: 1,
       title: "Top 10 Investment Locations in 2026",
       desc: "Discover the most profitable real estate locations for high ROI this year.",
-      img: "aprt1.webp",
+      img: "house8.webp",
       content: `
 Real estate investment continues to be one of the most stable and reliable wealth-building strategies worldwide. 
 In 2026, emerging markets are attracting global investors due to rapid infrastructure development, smart city projects, 
@@ -113,7 +113,7 @@ With proper research and strategic planning, real estate remains one of the most
       id: 2,
       title: "How to Buy Your First Home",
       desc: "A beginner's guide to mortgages and property selection.",
-      img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=80",
+      img: "house7.webp",
       content: `Buying your first home can feel overwhelming Cities with expanding transportation networks, IT hubs, and commercial corridors are seeing steady property appreciation Investors are focusing on locations that offer a balance between affordability and long-term capital growth potential
       Before investing, it is important to analyze market trends, rental yield percentages, population growth, and upcoming government projects. 
 Diversifying across residential, commercial, and mixed-use properties can also reduce risk while maximizing returns.`
