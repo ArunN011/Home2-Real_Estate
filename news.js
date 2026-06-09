@@ -1,4 +1,89 @@
+document.addEventListener("DOMContentLoaded", function () {
 
+    const userArea = document.getElementById("userArea");
+    if (!userArea) return;
+
+    const loggedUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (loggedUser && loggedUser.firstName) {
+
+        const firstLetter = loggedUser.firstName.charAt(0).toUpperCase();
+
+        userArea.innerHTML = `
+            <div class="user-wrapper">
+                <div class="user-circle" id="userToggle">
+                    ${firstLetter}
+                </div>
+
+                <ul class="custom-dropdown" id="userDropdown">
+                    <li><a href="dashboard.html">My Account</a></li>
+                    <li><a href="login.html" id="logoutBtn">Logout</a></li>
+                </ul>
+            </div>
+        `;
+       const homeToggle = document.getElementById("homeToggle");
+const homeDropdown = document.getElementById("homeDropdown");
+
+if (homeToggle && homeDropdown) {
+
+  homeToggle.addEventListener("click", function (e) {
+
+    if (window.innerWidth <= 992) {
+      e.preventDefault();
+      homeDropdown.classList.toggle("show-dropdown");
+    }
+
+  });
+
+}
+        const userToggle = document.getElementById("userToggle");
+        const userDropdown = document.getElementById("userDropdown");
+
+        if (!userToggle || !userDropdown) return;
+
+
+        userToggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            userDropdown.classList.toggle("show-dropdown");
+        });
+
+       
+        document.addEventListener("click", function (e) {
+            if (!userToggle.contains(e.target)) {
+                userDropdown.classList.remove("show-dropdown");
+            }
+        });
+
+     
+        const logoutBtn = document.getElementById("logoutBtn");
+        if (logoutBtn) {
+            logoutBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                localStorage.removeItem("loggedInUser");
+                window.location.reload();
+            });
+        }
+
+    } else {
+
+  
+
+        const userDropdown = userArea.querySelector(".custom-dropdown");
+
+        if (!userDropdown) return;
+
+        userArea.addEventListener("click", function (e) {
+            e.stopPropagation();
+            userDropdown.classList.toggle("show-dropdown");
+        });
+
+        document.addEventListener("click", function (e) {
+            if (!userArea.contains(e.target)) {
+                userDropdown.classList.remove("show-dropdown");
+            }
+        });
+    }
+});
 document.addEventListener("DOMContentLoaded", function () {
 
   const blogContainer = document.getElementById("blogContainer");
@@ -9,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       id: 1,
       title: "Top 10 Investment Locations in 2026",
       desc: "Discover the most profitable real estate locations for high ROI this year.",
-      img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+      img: "aprt1.webp",
       content: `
 Real estate investment continues to be one of the most stable and reliable wealth-building strategies worldwide. 
 In 2026, emerging markets are attracting global investors due to rapid infrastructure development, smart city projects, 
@@ -34,10 +119,10 @@ With proper research and strategic planning, real estate remains one of the most
 Diversifying across residential, commercial, and mixed-use properties can also reduce risk while maximizing returns.`
     },
     {
-      id: 2,
+      id: 3,
       title: "How to Sell Your First Home",
       desc: "A beginner's guide to mortgages and property selection.",
-      img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=80",
+      img: "banglore.webp",
       content: `Buying your first home can feel overwhelming Before investing, it is important to analyze market trends, rental yield percentages, population growth, and upcoming government projects. 
 Diversifying across residential, commercial, and mixed-use properties can also reduce risk while maximizing returns.`
     }
